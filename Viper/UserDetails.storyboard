@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="B2e-9m-RXB">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--User Details View Controller-->
+        <scene sceneID="wdC-Kq-bE2">
+            <objects>
+                <viewController storyboardIdentifier="UserDetailsViewController" id="B2e-9m-RXB" customClass="UserDetailsViewController" customModule="Viper" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aTP-XN-Mqb"/>
+                        <viewControllerLayoutGuide type="bottom" id="wAt-8S-92b"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="K7L-1H-pmR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FIRST NAME:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="opD-Zg-Chc">
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8WF-9D-0vf">
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LAST NAME:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FCQ-ww-yw7">
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3kt-DU-9xl">
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qv4-Zj-44b">
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="saveButtonTappedWithSender:" destination="B2e-9m-RXB" eventType="touchUpInside" id="iNu-Gm-reL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e2V-PM-kzh">
+                                <state key="normal" title="Info"/>
+                                <connections>
+                                    <action selector="infoButtonTappedWithSender:" destination="B2e-9m-RXB" eventType="touchUpInside" id="Xu6-9F-mEh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="8WF-9D-0vf" firstAttribute="leading" secondItem="K7L-1H-pmR" secondAttribute="leadingMargin" constant="20" id="18v-PV-uv6"/>
+                            <constraint firstItem="3kt-DU-9xl" firstAttribute="leading" secondItem="8WF-9D-0vf" secondAttribute="leading" id="1Nu-pa-zQD"/>
+                            <constraint firstItem="opD-Zg-Chc" firstAttribute="top" secondItem="aTP-XN-Mqb" secondAttribute="bottom" constant="8" id="3bh-G2-IUQ"/>
+                            <constraint firstItem="FCQ-ww-yw7" firstAttribute="top" secondItem="8WF-9D-0vf" secondAttribute="bottom" constant="8" id="8Vd-CJ-EgD"/>
+                            <constraint firstItem="Qv4-Zj-44b" firstAttribute="top" secondItem="3kt-DU-9xl" secondAttribute="bottom" constant="41" id="99S-7u-1s8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3kt-DU-9xl" secondAttribute="trailing" constant="20" id="C88-2u-S7j"/>
+                            <constraint firstItem="3kt-DU-9xl" firstAttribute="top" secondItem="FCQ-ww-yw7" secondAttribute="bottom" constant="8" id="G6c-MB-dMS"/>
+                            <constraint firstItem="Qv4-Zj-44b" firstAttribute="centerX" secondItem="K7L-1H-pmR" secondAttribute="centerX" id="Kfn-GA-SC8"/>
+                            <constraint firstItem="e2V-PM-kzh" firstAttribute="top" secondItem="Qv4-Zj-44b" secondAttribute="bottom" constant="28.5" id="Sol-Wz-WzS"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="8WF-9D-0vf" secondAttribute="trailing" constant="20" id="UOE-Eg-6Iv"/>
+                            <constraint firstItem="3kt-DU-9xl" firstAttribute="leading" secondItem="K7L-1H-pmR" secondAttribute="leadingMargin" constant="20" id="Whe-Cb-Rnr"/>
+                            <constraint firstItem="opD-Zg-Chc" firstAttribute="leading" secondItem="8WF-9D-0vf" secondAttribute="leading" id="ZEC-Vc-Z6H"/>
+                            <constraint firstItem="8WF-9D-0vf" firstAttribute="top" secondItem="opD-Zg-Chc" secondAttribute="bottom" constant="5" id="c8o-ja-2hA"/>
+                            <constraint firstItem="e2V-PM-kzh" firstAttribute="centerX" secondItem="K7L-1H-pmR" secondAttribute="centerX" id="oob-ge-VYq"/>
+                            <constraint firstItem="3kt-DU-9xl" firstAttribute="trailing" secondItem="8WF-9D-0vf" secondAttribute="trailing" id="rkk-dG-sqU"/>
+                            <constraint firstItem="FCQ-ww-yw7" firstAttribute="leading" secondItem="opD-Zg-Chc" secondAttribute="leading" id="seQ-pf-Cu2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="firstNameTextField" destination="8WF-9D-0vf" id="49C-u7-Wz2"/>
+                        <outlet property="lastNameTextField" destination="3kt-DU-9xl" id="qWW-Vw-AfQ"/>
+                        <outlet property="saveButton" destination="Qv4-Zj-44b" id="MYz-DP-cWx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VEu-Sb-fR2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="374" y="409"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="jQL-Ms-Jan">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Info View Controller-->
+        <scene sceneID="Vhd-Aq-GVu">
+            <objects>
+                <viewController storyboardIdentifier="InfoViewController" id="jQL-Ms-Jan" customClass="InfoViewController" customModule="Viper" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="skj-lq-v3X"/>
+                        <viewControllerLayoutGuide type="bottom" id="Cyn-x2-d9O"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YVT-YD-cSa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MVVM-R Example" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z7a-DF-nQk">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SAD-s7-MUn">
+                                <state key="normal" title="Dismiss"/>
+                                <connections>
+                                    <action selector="dismissButtonTappedWithSender:" destination="jQL-Ms-Jan" eventType="touchUpInside" id="rTu-1j-9dd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hcr-bH-824">
+                                <state key="normal" title="Home"/>
+                                <connections>
+                                    <action selector="homeButtonTappedWithSender:" destination="jQL-Ms-Jan" eventType="touchUpInside" id="yaC-8M-bJL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="z7a-DF-nQk" firstAttribute="centerX" secondItem="YVT-YD-cSa" secondAttribute="centerX" id="9TY-dg-VuQ"/>
+                            <constraint firstItem="hcr-bH-824" firstAttribute="centerX" secondItem="z7a-DF-nQk" secondAttribute="centerX" id="aoq-XG-FiJ"/>
+                            <constraint firstItem="hcr-bH-824" firstAttribute="top" secondItem="SAD-s7-MUn" secondAttribute="bottom" constant="24" id="eCW-ew-pmh"/>
+                            <constraint firstItem="SAD-s7-MUn" firstAttribute="centerX" secondItem="z7a-DF-nQk" secondAttribute="centerX" id="hNS-Aq-het"/>
+                            <constraint firstItem="SAD-s7-MUn" firstAttribute="top" secondItem="z7a-DF-nQk" secondAttribute="bottom" constant="30" id="i8P-L0-0bv"/>
+                            <constraint firstItem="z7a-DF-nQk" firstAttribute="top" secondItem="skj-lq-v3X" secondAttribute="bottom" constant="8" symbolic="YES" id="zu2-7u-8g2"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LXp-dg-jvE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="839" y="433"/>
+        </scene>
+    </scenes>
+</document>
